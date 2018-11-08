@@ -3,7 +3,7 @@ import pickle as cPickle
 import numpy as np
 
 
-image_path = 'C_10_50_294.jpg'
+image_path = 'C_03_05_001.jpg'
 list = []
 newimdata = []
 
@@ -37,6 +37,6 @@ for x in range(width):
             print('non è la mano')
         i=i+1
 
-im.save('test.png')
+im.save('r_'+image_path[:-4]+'.png')
 
 print('done')
