@@ -3,7 +3,7 @@ import pickle as cPickle
 import numpy as np
 
 
-image_path = 'C_03_05_001.jpg'
+image_path = 'C_10_50_294.jpg'
 list = []
 newimdata = []
 
@@ -24,13 +24,14 @@ for x in range(width):
         list.append(rgb_list)
 
 print('starting predictions..')
-pred=svm.predict(list)
+#pred=svm.predict(list)
+pred=svm.decision_function(list)
 
 i=0
 pixels=im.load()
 for x in range(width):
     for y in range(height):
-        if pred[i] == 1:
+        if pred[i] >= -0.0005:
             print('è la mano')
             pixels[x,y] = (255, 255, 255)
         else:
