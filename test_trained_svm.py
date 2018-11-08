@@ -31,7 +31,7 @@ i=0
 pixels=im.load()
 for x in range(width):
     for y in range(height):
-        if pred[i] >= -0.0005:
+        if pred[i] >= -0.0000005:
             print('è la mano')
             pixels[x,y] = (255, 255, 255)
         else:
@@ -41,3 +41,5 @@ for x in range(width):
 im.save('r_'+image_path[:-4]+'.png')
 
 print('done')
+
+

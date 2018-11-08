@@ -4,25 +4,29 @@ import numpy
 import PIL
 import math
 
-
-image_path = 'depth_images/C_11_01_282.png'
-depth_image_path = 'depth_images/D_11_01_282.png'
+name='C_05_17_022'
+image_path = 'depth_images/C_05_17_022.png'
+depth_image_path = 'depth_images/C_05_17_022.png'
 intermedio = 'intermedio.jpg'
 
+
+# SET THESE VALUES BEFORE STARTING
+background_depth = 200
+svm_threshold = -2.2
 
 depth_image = numpy.asarray(PIL.Image.open(depth_image_path).convert('LA'))
 depth_image.setflags(write=1)
 
 rgb_image = PIL.Image.open(image_path)
 
-hand_segmentation = False
+hand_segmentation = True
 
 # questo ciclo invece lavora solo sulla prima colonna dell'array 2D
 # print(new_image.flags)
 for i in range(len(depth_image)):
     for j in range(len(depth_image[i])):
         #dove la depth è < 226, la azzeriamo.
-        if(depth_image[i][j][0]) < 226:
+        if(depth_image[i][j][0]) < background_depth:
             depth_image[i][j][0] = 0
         #questa parte colora di nero i pixel dove manca il canale alpha
         if (depth_image[i][j][1]) == 0:
@@ -32,7 +36,7 @@ for i in range(len(depth_image)):
 
 img = PIL.Image.fromarray(depth_image)
 img = img.convert('RGB')
-img.save("intermedio.jpg")
+img.save("intermedio.png")
 
 
 # Coloro i pixel del background della immagine RGB (128x128)
@@ -71,21 +75,36 @@ if hand_segmentation:
             list.append(rgb_list)
 
     print('starting predictions..')
-    # pred=svm.predict(list)
+    #pred=svm.predict(list)
     pred = svm.decision_function(list)
-
+    print('MIN VALUE')
+    print(pred.min())
     i = 0
     pixels = rgb_image.load()
     for x in range(width):
         for y in range(height):
-            if pred[i] >= -0.000005:
+            if pred[i] >= svm_threshold:
                 print('è la mano')
-                pixels[x, y] = (255, 255, 255)
+                pixels[x, y] = (0, 0, 0)
             else:
                 print('non è la mano')
             i = i + 1
 
-    rgb_image.save('FINE.png')
+    # i = 0
+    # pixels = rgb_image.load()
+    # for x in range(width):
+    #     for y in range(height):
+    #         if pred[i] == 1:
+    #             print('è la mano')
+    #             pixels[x, y] = (0, 0, 0)
+    #         else:
+    #             print('non è la mano')
+    #         i = i + 1
+
+    rgb_image.save('results/FINE_'+name+'.png')
+
+    # Convertire immagine in binaria
+    # Applicare operatori morfologici
 
     print('done')
 
