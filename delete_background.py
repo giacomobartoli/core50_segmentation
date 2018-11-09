@@ -11,7 +11,7 @@ from skimage.morphology import binary_dilation
 # C_10_12_007, C_11_22_030
 
 
-name='C_09_45_031'
+name='C_11_22_030'
 image_path = 'depth_images/'+name+'.png'
 depth_name = list(name)
 depth_name[0] ='D'
@@ -21,9 +21,9 @@ intermedio = 'intermedio.jpg'
 
 
 # SET THESE VALUES BEFORE STARTING
-background_depth = 220
-svm_threshold = -2.45
-dilated = 1
+background_depth = 200
+svm_threshold = -2.2
+dilated = 0
 
 depth_image = numpy.asarray(PIL.Image.open(depth_image_path).convert('LA'))
 depth_image.setflags(write=1)
