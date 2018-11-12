@@ -27,3 +27,5 @@ This is what happens to each image:
 ## References 📚
 
 * Vincenzo Lomonaco and Davide Maltoni. "CORe50: a new Dataset and Benchmark for Continuous Object Recognition". Proceedings of the 1st Annual Conference on Robot Learning, PMLR 78:17-26, 2017.
+
+* [CORe50 website](https://vlomonaco.github.io/core50/)
