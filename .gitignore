@@ -214,6 +214,8 @@ pip-selfcheck.json
 
 # avoiding upload images to github
 depth_images/*.png
-
+dilations/*.png
+results/*.png
+predilation/*.png
 
 # End of https://www.gitignore.io/api/python,pycharm
