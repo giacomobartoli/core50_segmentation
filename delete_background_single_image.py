@@ -1,17 +1,9 @@
-from matplotlib import pyplot as plt
-from skimage import io, morphology
 import numpy
 import PIL
-import math
-
-from skimage.morphology import binary_dilation
-
-# C_05_17_022
-# List of images: C_02_01_207, C_02_42_003, C_03_01_004, C_03_22_182, C_03_47_177, C_05_17_022, C_07_36_005, C_09_45_031,
-# C_10_12_007, C_11_22_030
 
 
-name='C_11_22_030'
+
+name='C_03_47_177'
 image_path = 'depth_images/'+name+'.png'
 depth_name = list(name)
 depth_name[0] ='D'
@@ -132,7 +124,6 @@ if hand_segmentation:
     import matplotlib.cm as cm
 
     plt.imsave('dilations/'+name+'.png', numpy.array(dilated_image).reshape(128, 128), cmap=cm.gray)
-
 
     print('done')
 
