@@ -21,7 +21,7 @@ This is what happens to each image:
 
 | Original image (128x128)        | Deleting the background and the holding hand           | Binary image |Applying dilation  |
 | ------------- |:-------------:| -----:| -----: |
-| ![original image taken from core50](samples/OR_C_02_42_003.png)  | ![image with no background](samples/FINE_C_02_42_003.png) | ![binary image](samples/PRE_C_02_42_003.png)| ![dilation](samples/DIL_C_02_42_003.png) |
+| ![original image taken from core50](samples/OR_C_01_29_001.png)  | ![image with no background](samples/FINE_C_01_29_001.png) | ![binary image](samples/PRE_C_01_29_001.png)| ![dilation](samples/DIL_C_01_29_001.png) |
 
 
 ## References 📚

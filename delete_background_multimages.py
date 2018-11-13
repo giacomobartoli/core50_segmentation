@@ -2,6 +2,8 @@ import numpy
 import PIL.Image
 import PIL
 import os
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 
 # Creating a list of all the images to process
 images_to_process = []
@@ -29,7 +31,7 @@ for image in sorted(images_to_process):
 
     # qui devo crearmi una immagine di 1
     binary_image = numpy.zeros([128, 128], dtype=numpy.uint8)
-    binary_image.fill(0)
+    binary_image.fill(1)
 
     # deleting pixels belonging to the background
     for i in range(len(depth_image)):
@@ -54,12 +56,10 @@ for image in sorted(images_to_process):
                 pixels[x, y] = (0, 0, 0)
                 #new_image[x,y] = 0
             else:
-                binary_image[x, y] = 1
+                binary_image[x, y] = 0
 
     # rgb_image.save('result.png')
 
-    import matplotlib.pyplot as plt
-    import matplotlib.cm as cm
 
 
     # Using pre-trained SVM model for detecting pixels belonging to the hand
@@ -93,7 +93,7 @@ for image in sorted(images_to_process):
                 if pred[i] >= svm_threshold:
                     #print('this pixel belongs to the hand')
                     pixels[x, y] = (0, 0, 0)
-                    binary_image[x, y] = 0
+                    binary_image[x, y] = 1
                 i = i + 1
 
         rgb_image.save('results/FINE_' + image)
@@ -105,14 +105,10 @@ for image in sorted(images_to_process):
 
 
         # Applying morphological operators
-        dilated_image = morphology.binary_dilation(binary_image, morphology.diamond(dilated)).astype(
-            numpy.uint8)
-
-        import matplotlib.pyplot as plt
-        import matplotlib.cm as cm
+        dilated_image = morphology.binary_dilation(binary_image, morphology.diamond(dilated)).astype(numpy.uint8)
 
         # saving the final image
-        plt.imsave('dilations/' + image,dilated_image.reshape(128, 128), cmap=cm.gray)
+        plt.imsave('dilations/' + image,dilated_image, cmap=cm.gray)
 
 print('done')
 
