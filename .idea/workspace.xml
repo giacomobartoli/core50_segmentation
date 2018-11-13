@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cf97ae1-4106-475a-ad27-341e48a0cc76" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete_background_multimages.py" beforeDir="false" afterPath="$PROJECT_DIR$/delete_background_multimages.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,53 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="delete_background_single_image.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delete_background_single_image.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete_background_multimages.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="delete_background_multimages.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/delete_background_multimages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1455">
-              <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+            <state relative-caret-position="300">
+              <caret line="107" column="51" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="51" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="218" column="17" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="soglie" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soglie">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="11" selection-start-line="4" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -75,7 +37,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>args_to_tuple</find>
       <find>X_test</find>
       <find>5</find>
       <find>new_list</find>
@@ -105,6 +66,7 @@
       <find>width, height</find>
       <find>hand_segmentation</find>
       <find>list</find>
+      <find>new_image</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,9 +88,9 @@
         <option value="$PROJECT_DIR$/test_trained_svm.py" />
         <option value="$PROJECT_DIR$/soglie" />
         <option value="$PROJECT_DIR$/delete_background.py" />
-        <option value="$PROJECT_DIR$/delete_background_multimages.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/delete_background_multimages.py" />
       </list>
     </option>
   </component>
@@ -171,11 +133,6 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="core50_segmentation2" type="cbb8eebc:String" user="core50_segmentation2" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="core50_segmentation2" type="cbb8eebc:String" user="core50_segmentation2" />
-              <item name="samples" type="cbb8eebc:String" user="samples" />
             </path>
           </expand>
           <select />
@@ -347,16 +304,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="38" width="1347" height="819" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.24962293" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.24962293" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007542" side_tool="true" weight="0.32825485" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49773756" weight="0.32963988" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32963988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49924585" visible="true" weight="0.32825485" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924585" visible="true" weight="0.32825485" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39889196" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -396,23 +352,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/delete_background_multimages.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/delete_background_multimages.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/delete_background_multimages.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -420,77 +359,86 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="82" />
+      <option name="time" value="91" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_07_36_005.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_05_17_022.png" />
-    <entry file="file://$PROJECT_DIR$/CIAONE.png" />
-    <entry file="file://$PROJECT_DIR$/depth_images/C_05_17_022.png" />
-    <entry file="file://$PROJECT_DIR$/dilation.png" />
-    <entry file="file://$PROJECT_DIR$/depth_images/C_02_42_003.png" />
-    <entry file="file://$PROJECT_DIR$/depth_images/C_03_47_177.png" />
-    <entry file="file://$PROJECT_DIR$/depth_images/D_03_47_177.png">
+    <entry file="file://$PROJECT_DIR$/dilations/C_01_22_006.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/depth_images/C_09_45_031.png" />
-    <entry file="file://$PROJECT_DIR$/predilation/C_07_36_005.png" />
-    <entry file="file://$PROJECT_DIR$/predilation/C_09_45_031.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_09_45_031.png" />
-    <entry file="file://$PROJECT_DIR$/depth_images/C_02_01_207.png" />
-    <entry file="file://$PROJECT_DIR$/dilations/C_09_45_031.png" />
-    <entry file="file://$PROJECT_DIR$/depth_images/C_03_22_182.png" />
-    <entry file="file://$PROJECT_DIR$/intermedio.png" />
-    <entry file="file://$PROJECT_DIR$/r_C_10_50_294.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_10_12_007.png" />
-    <entry file="file://$PROJECT_DIR$/dilations/C_10_12_007.png" />
-    <entry file="file://$PROJECT_DIR$/test_trained_svm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/dilations/C_01_25_017.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/risultato.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_11_22_030.png" />
-    <entry file="file://$PROJECT_DIR$/dilations/C_11_22_030.png" />
-    <entry file="file://$PROJECT_DIR$/dilations/C_05_17_022.png" />
-    <entry file="file://$PROJECT_DIR$/dilations/C_07_36_005.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_02_01_207.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_02_42_003.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_03_01_004.png" />
-    <entry file="file://$PROJECT_DIR$/predilation/C_02_42_003.png" />
-    <entry file="file://$PROJECT_DIR$/dilations/C_02_42_003.png" />
-    <entry file="file://$PROJECT_DIR$/dilations/C_03_01_004.png" />
-    <entry file="file://$PROJECT_DIR$/predilation/C_03_01_004.png" />
-    <entry file="file://$PROJECT_DIR$/dilations/C_02_01_207.png" />
-    <entry file="file://$PROJECT_DIR$/predilation/C_02_01_207.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_03_22_182.png" />
-    <entry file="file://$PROJECT_DIR$/predilation/C_03_22_182.png" />
-    <entry file="file://$PROJECT_DIR$/dilations/C_03_22_182.png" />
-    <entry file="file://$PROJECT_DIR$/soglie">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="11" selection-start-line="4" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/dilations/C_01_29_001.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dilations/C_03_47_177.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_03_47_177.png" />
-    <entry file="file://$PROJECT_DIR$/predilation/C_03_47_177.png" />
-    <entry file="file://$PROJECT_DIR$/delete_background_single_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/dilations/C_01_34_005.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pre_dilation.png" />
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_01_34_005.png">
+    <entry file="file://$PROJECT_DIR$/dilations/C_01_38_010.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_01_43_006.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_01_48_008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_03_013.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_08_005.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_10_012.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_13_008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_16_006.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_23_006.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_26_014.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_33_012.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_35_007.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_42_005.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_03_04_012.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_03_07_009.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_03_13_005.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_03_15_012.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_03_16_009.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_03_17_008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/FINE_C_01_12_007.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/FINE_C_01_16_131.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/FINE_C_01_22_006.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$USER_HOME$/.conda/envs/untitled/lib/python3.6/codecs.py">
@@ -500,36 +448,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dilations/C_01_34_005.png">
+    <entry file="file://$PROJECT_DIR$/results/FINE_C_02_03_013.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dilations/C_01_29_001.png">
+    <entry file="file://$PROJECT_DIR$/images/C_02_03_013.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/one_class_svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/FINE_C_02_13_008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/C_02_13_008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IMG2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/FINE_C_01_03_004.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/C_01_03_004.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete_background_single_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_03_004.png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_12_007.png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_16_131.png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_22_006.png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_25_017.png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_29_001.png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_12_007.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_16_131.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_22_006.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_25_017.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/predilation/C_01_29_001.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_34_005.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_38_010.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predilation/C_01_03_004.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/delete_background_multimages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
+        <state relative-caret-position="300">
+          <caret line="107" column="51" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="51" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="218" column="17" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
         </state>
       </provider>
     </entry>

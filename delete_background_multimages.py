@@ -13,7 +13,7 @@ svm_threshold = -2.2
 dilated = 1
 
 
-for image in images_to_process:
+for image in sorted(images_to_process):
     print('Start processing '+image)
     image_path = 'images/' + image
     depth_name = ''
@@ -27,6 +27,10 @@ for image in images_to_process:
     rgb_image = PIL.Image.open(image_path)
     hand_segmentation = True
 
+    # qui devo crearmi una immagine di 1
+    binary_image = numpy.zeros([128, 128], dtype=numpy.uint8)
+    binary_image.fill(0)
+
     # deleting pixels belonging to the background
     for i in range(len(depth_image)):
         for j in range(len(depth_image[i])):
@@ -38,6 +42,8 @@ for image in images_to_process:
     img = PIL.Image.fromarray(depth_image)
     img = img.convert('RGB')
 
+
+
     # Taking the respective RGB image and deleting the background
     pixels = rgb_image.load()
     width, height = img.size
@@ -46,11 +52,15 @@ for image in images_to_process:
             r, g, b = img.getpixel((x, y))
             if r == 0 & g == 0 & b == 0:
                 pixels[x, y] = (0, 0, 0)
-            if r is None or g is None or b is None:
-                print('pixel NULL')
-                pixels[x, y] = (0, 0, 0)
+                #new_image[x,y] = 0
+            else:
+                binary_image[x, y] = 1
 
     # rgb_image.save('result.png')
+
+    import matplotlib.pyplot as plt
+    import matplotlib.cm as cm
+
 
     # Using pre-trained SVM model for detecting pixels belonging to the hand
     if hand_segmentation:
@@ -74,6 +84,8 @@ for image in images_to_process:
 
         print('starting SVM prediction for '+image)
         pred = svm.decision_function(list_SVM)
+
+
         i = 0
         pixels = rgb_image.load()
         for x in range(width):
@@ -81,27 +93,26 @@ for image in images_to_process:
                 if pred[i] >= svm_threshold:
                     #print('this pixel belongs to the hand')
                     pixels[x, y] = (0, 0, 0)
+                    binary_image[x, y] = 0
                 i = i + 1
 
         rgb_image.save('results/FINE_' + image)
 
         from skimage import morphology
 
-        # Make the image binary
-        gray = rgb_image.convert('L')
-        binary_image = gray.point(lambda x: 0 if x > 128 else 1, '1')
-        binary_image.save('predilation/' + image)
+        # l'immagine risultante la passo direttamente alla morfologia
+        plt.imsave('predilation/' + image, binary_image, cmap=cm.gray)
+
 
         # Applying morphological operators
-        img_temp = numpy.array(binary_image)
-        dilated_image = morphology.binary_dilation(numpy.array(binary_image), morphology.diamond(dilated)).astype(
+        dilated_image = morphology.binary_dilation(binary_image, morphology.diamond(dilated)).astype(
             numpy.uint8)
 
         import matplotlib.pyplot as plt
         import matplotlib.cm as cm
 
         # saving the final image
-        plt.imsave('dilations/' + image, numpy.array(dilated_image).reshape(128, 128), cmap=cm.gray)
+        plt.imsave('dilations/' + image,dilated_image.reshape(128, 128), cmap=cm.gray)
 
 print('done')
 
