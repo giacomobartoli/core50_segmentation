@@ -45,7 +45,6 @@ for image in sorted(images_to_process):
     img = img.convert('RGB')
 
 
-
     # Taking the respective RGB image and deleting the background
     pixels = rgb_image.load()
     width, height = img.size
@@ -57,7 +56,6 @@ for image in sorted(images_to_process):
                 #new_image[x,y] = 0
             else:
                 binary_image[x, y] = 0
-
     # rgb_image.save('result.png')
 
 
@@ -109,6 +107,18 @@ for image in sorted(images_to_process):
 
         # saving the final image
         plt.imsave('dilations/' + image,dilated_image, cmap=cm.gray)
+
+        # applying dilation to the rgb
+        i = 0
+        pixels = rgb_image.load()
+        for x in range(width):
+            for y in range(height):
+                if dilated_image[x,y] == 1:
+                    # print('this pixel belongs to the hand')
+                    pixels[x, y] = (0, 0, 0)
+                i = i + 1
+
+        rgb_image.save('results/FINE_' + image + '__NEW.png')
 
 print('done')
 

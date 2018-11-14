@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1cf97ae1-4106-475a-ad27-341e48a0cc76" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/delete_background_multimages.py" beforeDir="false" afterPath="$PROJECT_DIR$/delete_background_multimages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/DIL_C_02_42_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/FINE_C_02_42_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/OR_C_02_42_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/PRE_C_02_42_003.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +14,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="delete_background_multimages.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="C_01_29_001.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/C_01_29_001.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="delete_background_multimages.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/delete_background_multimages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="120" selection-start-line="120" selection-end-line="120" />
+            <state relative-caret-position="104">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -31,27 +31,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="C_01_29_001.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/C_01_29_001.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="23" column="214" selection-start-line="23" selection-start-column="214" selection-end-line="23" selection-end-column="214" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FINE_C_01_29_001.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results/FINE_C_01_29_001.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="C_01_29_001.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/predilation/C_01_29_001.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -123,16 +104,15 @@
         <option value="$PROJECT_DIR$/soglie" />
         <option value="$PROJECT_DIR$/delete_background.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/delete_background_multimages.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/delete_background_multimages.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
-    <option name="y" value="38" />
-    <option name="width" value="1347" />
-    <option name="height" value="819" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="845" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -167,11 +147,6 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="core50_segmentation2" type="cbb8eebc:String" user="core50_segmentation2" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="core50_segmentation2" type="cbb8eebc:String" user="core50_segmentation2" />
-              <item name="samples" type="cbb8eebc:String" user="samples" />
             </path>
           </expand>
           <select />
@@ -341,16 +316,24 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="38" width="1347" height="819" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.24962293" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49790794" visible="true" weight="0.23326287" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32963988" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007542" side_tool="true" weight="0.32825485" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32963988" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49773756" visible="true" weight="0.28808865" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49773756" weight="0.28727272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924585" weight="0.32825485" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -403,21 +386,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dilations/C_02_35_007.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dilations/C_02_42_005.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dilations/C_03_04_012.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dilations/C_03_07_009.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dilations/C_03_13_005.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/dilations/C_03_15_012.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -526,38 +494,53 @@
     <entry file="file://$PROJECT_DIR$/predilation/C_01_03_004.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_01_03_004.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/C_01_03_004.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/delete_background_multimages.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" column="214" selection-start-line="23" selection-start-column="214" selection-end-line="23" selection-end-column="214" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dilations/C_01_29_001.png">
+    <entry file="file://$PROJECT_DIR$/results/FINE_C_01_03_004.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_01_48_008.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/predilation/C_01_29_001.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/FINE_C_01_29_001.png">
+    <entry file="file://$PROJECT_DIR$/dilations/C_02_16_006.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_04_28_006.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_06_32_011.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_08_08_027.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dilations/C_01_29_001.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/images/C_01_29_001.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/results/FINE_C_01_29_001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete_background_multimages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="23" column="214" selection-start-line="23" selection-start-column="214" selection-end-line="23" selection-end-column="214" />
+        <state relative-caret-position="104">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
