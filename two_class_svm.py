@@ -44,7 +44,7 @@ train_SVM = True
 # Qui decido se caricare gli array da FS oppure ricrearli da zero
 create_pixels = False
 precision_recall = True
-load_SVM = True
+load_SVM = False
 
 # extract random elements from list of outliers
 import random
@@ -161,28 +161,25 @@ if train_SVM:
     temp = random_elements(background_list)
     X_outliers = temp[:10000]
 
+    print('size temp: '+str(len(temp)))
+    print('size outliers: '+str(len(X_outliers)))
+
     a = np.array(X_outliers).reshape(len(X_outliers), 3);
     X_train_new=np.concatenate([X_train,a])
 
-    #np.save('outliers.npy', X_outliers)
-    #np.load('testnp.npy')
-    print('OUTLIERS')
-    print(len(X_outliers))
-    #print(X_train.shape[1]==X_test.shape[1])
 
     print('TOTAL SIZE: ' + str(len(hand_list) + len(background_list)))
     print('PIXELS BELONGING TO THE HAND: ' + str(len(hand_list)))
-    print('TRAIN_SET SIZE: ' + str(test_size))
+    print('TRAIN_SET SIZE: ' + str(train_size))
     print('TEST_SET SIZE: ' + str(test_size))
 
-    # parte da cambiare
 
     y_handlabels = np.ones(len(X_train))
     y_out = np.ones(len(X_outliers))
     y_out.fill(-1)
     y = np.concatenate([y_handlabels,y_out])
 
-    clf = svm.SVC(gamma='auto')
+    clf = svm.SVC(gamma='scale')
 
     if load_SVM:
         with open('trained_two_classes_SVM.pkl', 'rb') as fid:
@@ -204,8 +201,6 @@ if train_SVM:
     y_scores_outliers = clf.decision_function(temp[10000:])
     y_scores = np.concatenate([y_scores_test, y_scores_outliers])
 
-    y_true_test = y_pred_test
-    y_true_outliers = y_pred_outliers
     y_true_test = np.ones(len(y_scores_test))
     y_true_outliers = np.empty(len(y_scores_outliers))
     y_true_outliers.fill(-1)
@@ -254,7 +249,7 @@ if train_SVM:
         plt.ylabel('Precision')
         plt.ylim([0.0, 1.05])
         plt.xlim([0.0, 1.0])
-        plt.title('2-class Precision-Recall curve: AP={0:0.2f}'.format(
+        plt.title('SVC Precision-Recall curve: AP={0:0.2f}'.format(
             average_precision))
         plt.show()
 

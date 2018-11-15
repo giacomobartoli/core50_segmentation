@@ -21,7 +21,7 @@ y_true = []
 #list of polygons
 polygons=[]
 
-root = '.'
+root = 'training_images'
 pattern = "*.jpg"
 
 # Bounding boxes root
@@ -97,7 +97,7 @@ for path, subdirs, files in os.walk(root):
              temp_list =[]
              listToAppend.append(name)
              listToAppend.append('hand')
-             xml_name=name[:-4]+'.xml'
+             xml_name=root+'/'+name[:-4]+'.xml'
              #print(xml_name)
              e = xml.etree.ElementTree.parse(xml_name).getroot()
              for i in range(24):

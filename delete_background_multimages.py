@@ -10,10 +10,11 @@ images_to_process = []
 images_to_process = os.listdir("images")
 
 # SET THESE VALUES BEFORE STARTING
-background_depth = 200
-svm_threshold = -2.2
+background_depth = 218
+svm_threshold = 0.5 # one class = -2.2
 dilated = 1
 
+svm_classes = 2
 
 for image in sorted(images_to_process):
     print('Start processing '+image)
@@ -56,7 +57,7 @@ for image in sorted(images_to_process):
                 #new_image[x,y] = 0
             else:
                 binary_image[x, y] = 0
-    # rgb_image.save('result.png')
+    rgb_image.save('temp'+image)
 
 
 
@@ -65,9 +66,15 @@ for image in sorted(images_to_process):
 
         import pickle as cPickle
 
-        with open('trained_SVM.pkl', 'rb') as fid:
-            svm = cPickle.load(fid)
-            print('SVM loaded correctly')
+        if svm_classes == 1:
+            with open('trained_SVM.pkl', 'rb') as fid:
+                svm = cPickle.load(fid)
+                print('SVM one class loaded correctly')
+        elif svm_classes == 2:
+            with open('trained_two_classes_SVM.pkl', 'rb') as fid:
+                svm = cPickle.load(fid)
+                print('SVC loaded correctly')
+
 
         list_SVM = []
         for x in range(width):
