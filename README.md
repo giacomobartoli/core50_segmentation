@@ -14,7 +14,7 @@ Results will be stored in the folders **results**, **predilations** and **delati
 This is what happens to each image:
 
 * First, the background is deleted exploiting depth information. (This step is stored into the `results` folder).
-* Then, SVM detects pixels belonging to the hand and try to remove it. (This step is stored into the `predilations` folder.
+* Then, SVM detects pixels belonging to the hand and tries to remove them. (This step is stored into the `predilations` folder.
 * Dilation is applied for denoising the final image. (This step is stored into the `dilations` folder).
 
 ### Visual process

@@ -16,6 +16,7 @@ dilated = 1
 
 svm_classes = 2
 
+
 for image in sorted(images_to_process):
     print('Start processing '+image)
     image_path = 'images/' + image
@@ -28,6 +29,8 @@ for image in sorted(images_to_process):
     depth_image = numpy.asarray(PIL.Image.open(depth_image_path).convert('LA'))
     depth_image.setflags(write=1)
     rgb_image = PIL.Image.open(image_path)
+
+    # use this boolean to decide wheater or not delete the holding hand
     hand_segmentation = True
 
     # qui devo crearmi una immagine di 1
@@ -101,7 +104,7 @@ for image in sorted(images_to_process):
                     binary_image[x, y] = 1
                 i = i + 1
 
-        rgb_image.save('results/FINE_' + image)
+        rgb_image.save('results/' + image)
 
         from skimage import morphology
 
@@ -125,7 +128,23 @@ for image in sorted(images_to_process):
                     pixels[x, y] = (0, 0, 0)
                 i = i + 1
 
-        rgb_image.save('results/FINE_' + image + '__NEW.png')
+        rgb_image.save('results/' + image + '__dilated.png')
+
+        # saving the segmented image
+
+        i = 0
+        pixels = rgb_image.load()
+        for x in range(width):
+            for y in range(height):
+                r, g, b = img.getpixel((x, y))
+                ciccio = pixels[x, y]
+                if pixels[x, y] != (0,0,0):
+                    # se il colore non è nero devo fare un leggero overlay
+                    r, g, b = img.getpixel((x, y))
+                    pixels[x,y] = (int(r/2), g, int(b/2))
+                i = i + 1
+
+        rgb_image.save('colors/' + image + '__dilated.png')
 
 print('done')
 
